@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "5.0",
   menu: async (kernel, info) => {
-    let installed = info.exists("app/env")
+    let installed = info.exists("app/venv")
     let running = {
       install: info.running("install.js"),
       start: info.running("start.js"),

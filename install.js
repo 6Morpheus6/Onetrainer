@@ -1,40 +1,58 @@
 module.exports = {
+  requires: {
+    bundle: "ai",
+  },
   run: [
-    // Edit this step to customize the git repository to use
     {
       method: "shell.run",
       params: {
-        message: [
-          "git clone https://github.com/Nerogar/OneTrainer app",
-        ]
+        message: "git clone https://github.com/Nerogar/OneTrainer app"
       }
     },
-    // Edit this step with your custom install commands
     {
       method: "shell.run",
       params: {
-        venv: "env",                // Edit this to customize the venv folder path
-        path: "app",                // Edit this to customize the path to start the shell from
+        venv: "venv",
+        path: "app",
         message: [
-          "uv pip install gradio devicetorch",
-          "uv pip install -r requirements.txt"
+          "pip install -r requirements-global.txt"
         ]
       }
     },
-    // Delete this step if your project does not use torch
     {
       method: "script.start",
       params: {
         uri: "torch.js",
         params: {
-          venv: "env",                // Edit this to customize the venv folder path
-          path: "app",                // Edit this to customize the path to start the shell from
-          // flashattention: true   // uncomment this line if your project requires flashattention
-          // xformers: true   // uncomment this line if your project requires xformers
-          // triton: true   // uncomment this line if your project requires triton
-          // sageattention: true   // uncomment this line if your project requires sageattention
+          venv: "venv",
+          path: "app"
         }
       }
     },
+    {
+      when: "{{which('apt')}}",
+      method: "shell.run",
+      params: {
+        sudo: true,
+        message: "apt-get install libgl1"
+      },
+      "next": null
+    },
+    {
+      when: "{{which('pacman')}}",
+      method: "shell.run",
+      params: {
+        sudo: true,
+        message: "pacman -S tk"
+      },
+      "next": null
+    },
+    {
+      when: "{{which('apk')}}",
+      method: "shell.run",
+      params: {
+        message: "apk add py3-tk"
+      }
+    }
   ]
 }
