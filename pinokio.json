@@ -1,6 +1,6 @@
 {
   "title": "Onetrainer",
-  "description": "One app to train them all. LORA training for Z-Image, Qwen Image, FLUX.1, Flux.2 Dev and Klein, Chroma, Stable Diffusion 1.5, 2.0, 2.1, 3.0, 3.5, SDXL, Würstchen-v2, Stable Cascade, PixArt-Alpha, PixArt-Sigma, Sana, Hunyuan Video and inpainting models.",
+  "description": "One app to train them all. LORA training and Model finetuning for Z-Image, Qwen Image, FLUX.1, Flux.2 Dev and Klein, Chroma, SD 1.5 - 3.5, SDXL, Würstchen-v2, Stable Cascade, PixArt-Alpha, PixArt-Sigma, Sana, Hunyuan Video and inpainting models.",
   "icon": "icon.png",
   "links": [
     {
