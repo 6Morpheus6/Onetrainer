@@ -15,7 +15,7 @@ module.exports = {
     params: {
       venv: "venv",
       path: "app",
-      message: "uv pip install requirements-global.txt --force-reinstall"
+      message: "uv pip install -r requirements-global.txt --force-reinstall"
     }
   }, {
     when: "gpu === 'nvidia'",
@@ -23,7 +23,7 @@ module.exports = {
     params: {
       venv: "venv",
       path: "app",
-      message: "uv pip install requirements-cuda.txt --force-reinstall --no-deps"
+      message: "uv pip install -r requirements-cuda.txt --force-reinstall --no-deps"
     },
       "next": null
   }, {
@@ -32,7 +32,7 @@ module.exports = {
     params: {
       venv: "venv",
       path: "app",
-      message: "uv pip install requirements-rocm.txt --force-reinstall --no-deps"
+      message: "uv pip install -r requirements-rocm.txt --force-reinstall --no-deps"
     }
   }]
 }
