@@ -1,0 +1,11 @@
+{
+  "run": [
+    {
+      "method": "hf.download",
+      "params": {
+        "_": ["Qwen/Qwen-Image-2512"],
+        "local-dir": "app/base_models/Qwen-Image"
+      }
+    }
+  ]
+}

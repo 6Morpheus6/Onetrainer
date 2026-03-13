@@ -1,0 +1,11 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "path": "app",
+        "message": "hf download camenduru/FLUX.1-Fill-dev-ungated --exclude=\".gitattributes\" --exclude=\"*.md\" --exclude=\"ae.safetensors\" --exclude=\"flux1-fill-dev.safetensors\" --local-dir=./base_models/Flux-Fill-Dev"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "run": [
+    {
+      "method": "hf.download",
+      "params": {
+        "_": ["camenduru/FLUX.1-dev-diffusers"],
+        "local-dir": "app/base_models/Flux1-Dev"
+      }
+    },
+    {
+      "method": "fs.download",
+      "params": {
+        "uri": "https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_0.gguf?download=true",
+        "dir": "app/gguf_models/Flux1-Dev-Q4_0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "path": "app",
+        "message": "hf download Aquiles-ai/FLUX.2-dev --exclude=\".gitattributes\" --exclude=\"*.md\" --exclude=\"*.txt\" --exclude=\"*.png\" --local-dir=./base_models/Flux2-Dev"
+      }
+    },
+        {
+        "method": "fs.download",
+        "params": {
+            "uri": "https://huggingface.co/city96/FLUX.2-dev-gguf/resolve/main/flux2-dev-Q2_K.gguf?download=true",
+            "dir": "app/gguf_models/FLUX2-Dev-Q2_K"
+        }
+        }
+  ]
+}

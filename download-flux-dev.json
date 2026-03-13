@@ -1,0 +1,11 @@
+{
+  "run": [
+    {
+      "method": "hf.download",
+      "params": {
+        "_": ["camenduru/FLUX.1-dev-diffusers"],
+        "local-dir": "app/base_models/Flux1-Dev"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "run": [
+    {
+      "method": "hf.download",
+      "params": {
+        "_": ["Qwen/Qwen-Image-2512"],
+        "local-dir": "app/base_models/Qwen-Image"
+      }
+    },
+    {
+      "method": "fs.download",
+      "params": {
+        "uri": "https://huggingface.co/city96/Qwen-Image-gguf/resolve/main/qwen-image-Q2_K.gguf?download=true",
+        "dir": "app/gguf_models/Qwen-Image-Q2_K"
+      }
+    }
+  ]
+}

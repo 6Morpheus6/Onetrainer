@@ -1,0 +1,11 @@
+{
+  "run": [
+    {
+      "method": "hf.download",
+      "params": {
+        "_": ["xcreates/FLUX.2-klein-4B"],
+        "local-dir": "app/base_models/FLUX2-Klein-4B"
+      }
+    }
+  ]
+}

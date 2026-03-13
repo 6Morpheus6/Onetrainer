@@ -1,0 +1,11 @@
+{
+  "run": [
+    {
+      "method": "hf.download",
+      "params": {
+        "_": [ "Tongyi-MAI/Z-Image" ],
+        "local-dir": "app/base_models/Z-Image"
+      } 
+    }
+  ]
+}

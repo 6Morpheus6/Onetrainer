@@ -1,0 +1,11 @@
+{
+  "run": [
+    {
+      "method": "hf.download",
+      "params": {
+        "_": ["Runware/BFL-FLUX.2-klein-base-9B"],
+        "local-dir": "app/base_models/FLUX2-Klein-9B"
+      }
+    }
+  ]
+}

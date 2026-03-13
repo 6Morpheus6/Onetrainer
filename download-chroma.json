@@ -1,0 +1,11 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "path": "app",
+        "message": "hf download lodestones/Chroma1-HD --exclude=\"*.png\" --exclude=\".gitattributes\" --exclude=\"*.md\" --exclude=\"Chroma1-HD.safetensors\" --exclude=\"ComfyUI_Chroma1-HD_T2I-workflow.json\" --local-dir=./base_models/Chroma1-HD"
+      }
+    }
+  ]
+}

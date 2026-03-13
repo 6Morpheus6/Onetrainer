@@ -1,0 +1,11 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "path": "app",
+        "message": "hf download Aquiles-ai/FLUX.2-dev --exclude=\".gitattributes\" --exclude=\"*.md\" --exclude=\"*.txt\" --exclude=\"*.png\" --local-dir=./base_models/Flux2-Dev"
+      }
+    }
+  ]
+}
