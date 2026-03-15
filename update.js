@@ -15,7 +15,7 @@ module.exports = {
     params: {
       venv: "venv",
       path: "app",
-      message: "uv pip install -r requirements-global.txt --force-reinstall"
+      message: "pip install -r requirements-global.txt --force-reinstall"
     }
   }, {
     when: "gpu === 'nvidia'",
