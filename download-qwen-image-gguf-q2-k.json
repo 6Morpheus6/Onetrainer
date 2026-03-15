@@ -11,7 +11,7 @@
       "method": "fs.download",
       "params": {
         "uri": "https://huggingface.co/city96/Qwen-Image-gguf/resolve/main/qwen-image-Q2_K.gguf?download=true",
-        "dir": "app/gguf_models/Qwen-Image-Q2_K"
+        "dir": "app/gguf_models"
       }
     }
   ]

@@ -11,7 +11,7 @@
         "method": "fs.download",
         "params": {
             "uri": "https://huggingface.co/city96/FLUX.2-dev-gguf/resolve/main/flux2-dev-Q2_K.gguf?download=true",
-            "dir": "app/gguf_models/FLUX2-Dev-Q2_K"
+            "dir": "app/gguf_models"
         }
         }
   ]

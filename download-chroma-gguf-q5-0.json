@@ -11,7 +11,7 @@
       "method": "fs.download",
       "params": {
         "uri": "https://huggingface.co/silveroxides/Chroma1-HD-GGUF/resolve/main/Chroma1-HD-Q5_0.gguf?download=true",
-        "dir": "app/gguf_models/Chroma1-HD-Q5_0"
+        "dir": "app/gguf_models"
       }
     }
   ]
